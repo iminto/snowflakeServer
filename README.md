@@ -5,7 +5,7 @@
 
 ```sh
 mvn clean package
-java -Xms128M -Xmx8M -XX:MetaspaceSize=32m -XX:MaxMetaspaceSize=48m -Xss256k -XX:+UseConcMarkSweepGC -XX:+HeapDumpOnOutOfMemoryError -XX:AutoBoxCacheMax=10000  -jar  target/snowflake-1.0-SNAPSHOT-jar-with-dependencies.jar
+java -Xms128M -Xmx128M -XX:MetaspaceSize=32m -XX:MaxMetaspaceSize=48m -Xss256k -XX:+UseConcMarkSweepGC -XX:+HeapDumpOnOutOfMemoryError -XX:AutoBoxCacheMax=10000  -jar  target/snowflake-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 基于Netty，提供高性能无阻塞的服务，Java客户端例子参考SnowClientHandler和OldServer
 
